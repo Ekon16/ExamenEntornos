@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 
 public class ListaProductos {
-
+    
     /**
      * Estructura HashMap para almacenar los productos de la lista de productos
      * @see "HashMap java doc"
@@ -51,7 +51,9 @@ public class ListaProductos {
      * @return Si esta dubplicado devuleve null sino devuelve añade el producto y lo devuelve.
      */
     public Producto addProducto(Producto prod) {
-        
+        if(prod.getcode() == null){
+        return null;
+        }
         if (listaP.containsKey(prod.getcode())) {
             // System.out.println("Producto con código duplicado");
             return null;
@@ -71,7 +73,9 @@ public class ListaProductos {
      * @return regresa el codigo del producto borrado
      */
     public Producto eliminarProducto(String codigo) { 
-        
+        if(codigo == null){
+        return null;
+        }
         Producto prod = buscarProducto(codigo);
         if (prod != null) {
         listaP.remove(codigo);
@@ -86,6 +90,10 @@ public class ListaProductos {
      * @return regresa el codigo del producto buscado
      */
     public Producto buscarProducto(String codigo) { 
+        
+        if(codigo == null){
+        return null;
+        }
         Producto prod = null;
         
         if (!listaP.containsKey(codigo)) {
