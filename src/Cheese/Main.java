@@ -1,8 +1,8 @@
 /*
-*	grupo  :
-*	alumno :
-*	n.exp. :
-*	fecha  :
+*	grupo  : 1ºGDAM
+*	alumno : Jose Ignacio Goidno
+*	n.exp. : 7238
+*	fecha  : 01/06/2022
  */
 package Cheese;
 
