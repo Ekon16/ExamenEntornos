@@ -16,6 +16,7 @@ public class ListaProductos {
     /**
      * Estructura HashMap para almacenar los productos de la lista de productos
      * @see "HashMap java doc"
+     * 
      */
     private HashMap<String, Producto> listaP = new HashMap();
     
@@ -68,9 +69,9 @@ public class ListaProductos {
     
     
     /**
-     * Elimina un producto de la Lista
-     * @param codigo es el codigo de los productos
-     * @return regresa el codigo del producto borrado
+     * Elimina un producto de la Lista.
+     * @param codigo es el codigo de los productos.
+     * @return regresa el codigo del producto borrado.
      */
     public Producto eliminarProducto(String codigo) { 
         if(codigo == null){
